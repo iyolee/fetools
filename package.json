@@ -4,11 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "tslint": "tslint --project tsconfig.json",
+    "pre-commit": "npm run tslint"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/iyolee/fetools.git"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "validate-commit-msg",
+      "pre-commit": "npm run pre-commit"
+    }
   },
   "keywords": [],
   "author": "",
