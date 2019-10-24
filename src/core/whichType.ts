@@ -13,14 +13,3 @@ export const whichType$ = (value: ValueType): string => {
   const type: string = _toString.call(value).split(' ')[1].replace(']', '');
   return type.toLowerCase();
 };
-
-/**
- * @export
- * @function 检测是否属于某种类型
- * @param {string} type
- * @param {string} value
- * @returns {boolean} true | false
- */
-export const isType$ = (type: string, value: ValueType): boolean => {
-  return type === whichType$(value);
-};

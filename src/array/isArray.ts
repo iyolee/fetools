@@ -1,4 +1,5 @@
-import { isType$ } from '../core/type';
+import { isType$ } from '../core/index';
+
 /**
  * @export
  * @function 检测输入值是否为数组类型

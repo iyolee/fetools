@@ -1,4 +1,4 @@
-import { isArray$ } from './array';
+import { isArray$ } from './isArray';
 
 export {
   isArray$,

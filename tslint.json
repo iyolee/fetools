@@ -8,6 +8,7 @@
   },
   "rules": {
     "import-name": false,
+    "suppressImplicitAnyIndexErrors": true,
     "no-this-assignment": false,
     "variable-name": false,
     "no-parameter-reassignment": false,
