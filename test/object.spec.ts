@@ -1,4 +1,4 @@
-import { $getPrimitive } from '../src/index';
+import { $getPrimitive, $isPrimitive } from '../src/index';
 
 test('[object]case 1: $getPrimitive', () => {
   const a = {
@@ -32,3 +32,9 @@ test('[object]case 2: $getPrimitive', () => {
   expect(result(['b', 'c', 0, 'd'])).toBe('hello world')
   expect(result(['b', 'c', 1, 'd'])).toBe(null)
 });
+
+
+test('[core]case 3: $isPrimitive', () => {
+  expect($isPrimitive({})).toBe(true)
+  expect($isPrimitive('')).toBe(false)
+})
