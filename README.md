@@ -23,7 +23,7 @@ npm install save fetools
 
 ### Test
 ```
-npm run test
+npm test
 ```
 
 ### Build
