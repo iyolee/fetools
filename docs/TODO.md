@@ -1,6 +1,5 @@
-# API
-
-## 综合
+# 待合并 API 文档
+以下 API 为已通过测试，处于待合并状态。
 
 ### 1. $whichType(value)
 ``` js
