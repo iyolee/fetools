@@ -1,1 +1,1 @@
-export declare function $isPrimitive(val: object): boolean;
+export declare function $isPrimitive(val: any): boolean;
