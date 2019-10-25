@@ -12,7 +12,7 @@
 
 ### Usage
 ```
-npm install save fetools
+npm install save fetools-utils
 ```
 
 ### API
