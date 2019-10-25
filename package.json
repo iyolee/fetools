@@ -55,7 +55,5 @@
     "typescript": "^3.6.4",
     "validate-commit-msg": "^2.14.0"
   },
-  "dependencies": {
-    "save-dev": "0.0.1-security"
-  }
+  "dependencies": {}
 }
