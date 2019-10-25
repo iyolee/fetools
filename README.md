@@ -34,7 +34,7 @@ npm run build
 ### PR
 如何PR？请移步[PR 流程](./docs/PR.md)
 
-### More
+### Q & A 
 
 #### 1. 使用 TypeScript 编写
 TypeScript 是 JavaScript 的超集，增加静态类型系统。能够尽早发现可能存在的书写错误，还能有比价好的编写体验。
