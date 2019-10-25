@@ -1,2 +1,3 @@
-import { isArray$ } from './array';
-export { isArray$ };
+import { $isArray } from './array';
+import { $getPrimitive } from './object';
+export { $isArray, $getPrimitive, };

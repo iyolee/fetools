@@ -1,6 +1,6 @@
 {
   "name": "fetools",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/any-touch.esm.js",
@@ -14,6 +14,9 @@
     "tslint": "tslint --project tsconfig.json",
     "pre-commit": "npm run tslint",
     "build": "tsc && ./node_modules/.bin/rollup -c"
+  },
+  "bin": {
+    "fetools": "./lib/cli.js"
   },
   "repository": {
     "type": "git",
@@ -46,6 +49,7 @@
     "rollup-plugin-replace": "^2.2.0",
     "rollup-plugin-sourcemaps": "^0.4.2",
     "rollup-plugin-typescript": "^1.0.1",
+    "rollup-plugin-uglify": "^6.0.3",
     "ts-jest": "^24.1.0",
     "tslib": "^1.10.0",
     "tslint": "^5.14.0",
