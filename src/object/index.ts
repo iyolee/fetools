@@ -1,5 +1,7 @@
-import { isObject$ } from './isObject';
+import { $isPrimitive } from './isPrimitive';
+import { $getPrimitive } from './getPrimitive';
 
 export {
-  isObject$,
-}
+  $isPrimitive,
+  $getPrimitive,
+};

@@ -1,5 +1,7 @@
-import { isArray$ } from './array';
+import { $isArray } from './array';
+import { $getPrimitive } from './object';
 
 export {
-  isArray$
-}
+  $isArray,
+  $getPrimitive,
+};

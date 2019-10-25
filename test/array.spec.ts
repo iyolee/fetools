@@ -1,5 +1,5 @@
-import { isArray$ } from '../src/array';
+import { $isArray } from '../src/array';
 
-test('[] is Array', () => {
-  expect(isArray$([])).toBe(true)
-});
+test('[array]case 1: $isArray', () => {
+  expect($isArray([])).toBe(true)
+})

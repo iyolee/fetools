@@ -1,5 +1,5 @@
-import { isArray$ } from './isArray';
+import { $isArray } from './isArray';
 
 export {
-  isArray$,
+  $isArray,
 };

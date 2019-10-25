@@ -8,8 +8,8 @@ type ValueType = string | boolean | number | null | undefined | symbol |
  * "string", "number", "null", "undefined", "boolean", "symbol"
  * "function", "object", "regexp", "array"
  */
-export const whichType$ = (value: ValueType): string => {
+export function $whichType(value: ValueType): string {
   const _toString = Object.prototype.toString;
   const type: string = _toString.call(value).split(' ')[1].replace(']', '');
   return type.toLowerCase();
-};
+}

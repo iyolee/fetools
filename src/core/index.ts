@@ -1,7 +1,7 @@
-import { whichType$ } from './whichType';
-import { isType$ } from './isType';
+import { $whichType } from './whichType';
+import { $isType } from './isType';
 
 export {
-  whichType$,
-  isType$,
-}
+  $whichType,
+  $isType,
+};

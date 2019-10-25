@@ -1,4 +1,4 @@
-import { whichType$ } from './index';
+import { $whichType } from './whichType';
 
 type ValueType = string | boolean | number | null | undefined | symbol |
   any[] | object | (() => void) | RegExp;
@@ -10,6 +10,6 @@ type ValueType = string | boolean | number | null | undefined | symbol |
  * @param {string} value
  * @returns {boolean} true | false
  */
-export const isType$ = (type: string, value: ValueType): boolean => {
-  return type === whichType$(value);
-};
+export function $isType(type: string, value: ValueType): boolean {
+  return type === $whichType(value);
+}

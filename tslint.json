@@ -2,7 +2,7 @@
   "extends": ["tslint:recommended", "tslint-config-prettier", "tslint-config-airbnb"],
   "linterOptions": {
     "exclude": [
-      "config/**/*.js",
+      "test/**/*.ts",
       "node_modules/**/*.ts"
     ]
   },
@@ -26,6 +26,7 @@
     "member-ordering": false,
     "prefer-const": false,
     "no-shadowed-variable": false,
-    "no-var-requires": false
+    "no-var-requires": false,
+    "prefer-array-literal": false
   }
 }
