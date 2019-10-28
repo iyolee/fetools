@@ -1,4 +1,4 @@
-import { $localStorage } from '../src/dom/localStorage'
+import { $localStorage } from '../src/bom/localStorage'
 
 describe('$localStorage with time expiration function',()=>{
   test('should be null if no $localStroage', () => {
