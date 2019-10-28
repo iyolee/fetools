@@ -16,17 +16,17 @@ describe('$localStorage with time expiration function',()=>{
   })
   
   test('should be null if remove $localStroage',()=>{
-    $localStorage.setItem('test', '222')
-    expect($localStorage.getItem('test')).toBe('222')
+    $localStorage.setItem('test', 0)
+    expect($localStorage.getItem('test')).toBe(0)
     $localStorage.removeItem('test')
     expect($localStorage.getItem('test')).toBeNull()
   })
   
   test('should be null if clear $localStroage',()=>{
-    $localStorage.setItem('test', '111')
-    $localStorage.setItem('test2', '222')
-    expect($localStorage.getItem('test')).toBe('111')
-    expect($localStorage.getItem('test2')).toBe('222')
+    $localStorage.setItem('test', 'undefined')
+    $localStorage.setItem('test2', 'null')
+    expect($localStorage.getItem('test')).toBe('undefined')
+    expect($localStorage.getItem('test2')).toBe('null')
     $localStorage.clear()
     expect($localStorage.getItem('test')).toBeNull()
     expect($localStorage.getItem('test2')).toBeNull()

@@ -4,13 +4,19 @@
  * @object 封装一个有过期时间功能的localStorage
  */
 export const $localStorage = {
-  getItem(key: string): string {
+  getItem(key: string): string | null {
     const v = JSON.parse(localStorage.getItem(key) || '{}');
-    return (v.time > 0 && (Number(new Date()) > v.time)) ? `参数${key}已过期` : (v.value || null);
+    if (v.time > 0 && (Number(new Date()) > v.time)) {
+      return `参数${key}已过期`;
+    } else if (v.value === undefined) {
+      return null;
+    } else {
+      return v.value;
+    }
   },
   /**
    * @param key:存储的键名
-   * @param val:存储的z值
+   * @param val:存储的值
    * @param time:过期时间
    */
   setItem(key: string, val: any, time?: number) {
