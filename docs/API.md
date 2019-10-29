@@ -1,15 +1,15 @@
-# API
-
+# APIs
+fetools 详细 API 文档。
 ## Object
 <details>
 <summary>View contents</summary>
 
-* [`$isPlainOject`](#$isPlainOject)
-* [`$isObjectEquals`](#$isObjectEquals)
+* [`$isPlainOject`](#isPlainOject)
+* [`$isObjectEquals`](#isObjectEquals)
 
 </details>
 
-### $isPlainOject
+### isPlainOject
 描述：判断传进去的某个值是否为 Object。
 
 ```js
@@ -33,7 +33,7 @@ $isPlainOject([]) // false
 
 <br>[⬆ Back to top](#API)
 
-### $isObjectEquals
+### isObjectEquals
 描述：判断两个输入 Object 类型值是否相等。
 
 ```js
