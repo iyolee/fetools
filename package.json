@@ -11,6 +11,7 @@
   ],
   "scripts": {
     "test": "jest",
+    "coverage": "open ./coverage/lcov-report/index.html",
     "tslint": "tslint --project tsconfig.json",
     "pre-commit": "npm run tslint",
     "build": "tsc && ./node_modules/.bin/rollup -c"

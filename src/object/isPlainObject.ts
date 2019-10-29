@@ -6,6 +6,6 @@ import { $isType } from '../core/isType';
  * @param {any} val
  * @returns {boolean}
  */
-export function $isPrimitive(val: any): boolean {
+export function $isPlainOject(val: any): boolean {
   return $isType('object', val);
 }
