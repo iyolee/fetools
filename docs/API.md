@@ -33,11 +33,40 @@ fetools 详细 API 文档。
 
 </details>
 
+## Function
+<details>
+<summary>View contents</summary>
+
+* [`$once`](#once)
+* [`$debounce`](#debounce)
+* [`$throttle`](#throttle)
+
+</details>
+
+## Number
+<details>
+<summary>View contents</summary>
+
+* [`$isNumber`](#isNumber)
+* [`$randomIntegerInRange`](#randomIntegerInRange)
+* [`$randomNumberInRange`](#randomNumberInRange)
+
+</details>
+
+## String
+<details>
+<summary>View contents</summary>
+
+* [`$isString`](#isString)
+* [`$addZero`](#addZero)
+
+</details>
+
 ### isPlainOject
 描述：判断传进去的某个值是否为 Object。
 
 ```js
-$isPlainOject(val: any): boolean;
+$isPlainOject(val: any): Boolean;
 ```
 
 参数：
@@ -61,7 +90,7 @@ $isPlainOject([]) // false
 描述：判断两个输入 Object 类型值是否相等。
 
 ```js
-$isObjectEquals(obj1: Object | Array, obj2: Object | Array): boolean;
+$isObjectEquals(obj1: Object | Array, obj2: Object | Array): Boolean;
 ```
 
 参数：
@@ -142,7 +171,7 @@ $flattenObject({ a: { b: { c: [1, 2] } }, d: 1 }) // { 'a.b.c': [1, 2], d: 1 }
 描述：判断传进去的某个值是否为 Array。
 
 ```js
-$isArray(val: any): boolean;
+$isArray(val: any): Boolean;
 ```
 
 参数：
@@ -255,7 +284,7 @@ $MayBe.of(res)
 描述：需要对某些值进行某种重复的操作。
 
 ```js
-$continous(fn: Function): any;
+$continous(fn: Function): Function;
 ```
 
 参数：
@@ -282,7 +311,7 @@ mul(1, 2, 3, 4) // 24
 描述：重复进行某些操作。
 
 ```js
-$toggle([fn: Function]): any;
+$toggle([fn: Function]): Function;
 ```
 
 参数：
@@ -309,7 +338,7 @@ testFn() // 'yellow'
 描述：将某些函数进行管道操作。
 
 ```js
-$toggle(fn1, fn2, ...): any;
+$toggle(fn1, fn2, ...): Function;
 ```
 
 参数：
@@ -329,6 +358,202 @@ const testFn = $pipe(addOne, mulFive, addTwo)
 
 testFn(1) // 12
 testFn(1) // 17
+```
+</details>
+
+<br>[⬆ Back to top](#APIs)
+
+### once
+描述：限制传入的函数只能执行一次。
+
+```js
+$once(fn): Function;
+```
+
+参数：
+- fn: 需要进行限制的函数。
+
+返回值：
+- 返回一个新的函数，该函数接受某些参数。
+
+<details>
+<summary>Examples</summary>
+
+```js
+const onceFn = $once(() => { console.log('once') })
+
+onceFn() // 'once'
+onceFn() // 不再执行
+```
+</details>
+
+<br>[⬆ Back to top](#APIs)
+
+### debounce
+描述：防抖操作。
+
+```js
+$debounce(fn): Function;
+```
+
+参数：
+- fn: 需要进行防抖的函数。
+
+返回值：
+- 返回一个新的函数，该函数接受某些参数。
+
+<details>
+<summary>Examples</summary>
+
+```js
+const debounceFn = $debounce(() => { console.log('debounce') })
+
+debounceFn() // 'debounce'
+```
+</details>
+
+<br>[⬆ Back to top](#APIs)
+
+### throttle
+描述：节流操作。
+
+```js
+$throttle(fn): Function;
+```
+
+参数：
+- fn: 需要进行节流的函数。
+
+返回值：
+- 返回一个新的函数，该函数接受某些参数。
+
+<details>
+<summary>Examples</summary>
+
+```js
+const throttleFn = $throttle(() => { console.log('throttle') })
+
+throttleFn() // 'throttle'
+```
+</details>
+
+<br>[⬆ Back to top](#APIs)
+
+### isNumber
+描述：判断输入值是否为 Number。
+
+```js
+$isNumber(val: any): Boolean;
+```
+
+参数：
+- val: 需要检测的值。
+
+返回值：
+- 如果值是 Number，则为true; 否则为false。
+
+<details>
+<summary>Examples</summary>
+
+```js
+$isNumber(1) // true
+$isNumber([]) // false
+```
+</details>
+
+<br>[⬆ Back to top](#APIs)
+
+### randomIntegerInRange
+描述：获取某范围内的随机整数。
+
+```js
+$randomIntegerInRange(min: Number, max: Number): Number;
+```
+
+参数：
+- min: 范围的最小值。
+- max: 范围的最大值。
+
+返回值：
+- 区间范围内的随机整数。
+
+<details>
+<summary>Examples</summary>
+
+```js
+$randomIntegerInRange(0, 6) // 5
+```
+</details>
+
+<br>[⬆ Back to top](#APIs)
+
+### randomNumberInRange
+描述：获取某范围内的随机小数。
+
+```js
+$randomNumberInRange(min: Number, max: Number): Number;
+```
+
+参数：
+- min: 范围的最小值。
+- max: 范围的最大值。
+
+返回值：
+- 区间范围内的随机小数。
+
+<details>
+<summary>Examples</summary>
+
+```js
+$randomNumberInRange(0, 6) // 4.826308609206913
+```
+</details>
+
+<br>[⬆ Back to top](#APIs)
+
+### isString
+描述：判断输入值是否为 String。
+
+```js
+$isString(val: any): Boolean;
+```
+
+参数：
+- val: 需要检测的值。
+
+返回值：
+- 如果值是 String，则为true; 否则为false。
+
+<details>
+<summary>Examples</summary>
+
+```js
+$isString(1) // false
+$isString('') // true
+```
+</details>
+
+<br>[⬆ Back to top](#APIs)
+
+### addZero
+描述：进行补 0 操作。
+
+```js
+$addZero(val: String): String;
+```
+
+参数：
+- val: 需要进行补 0 的字符串。
+
+返回值：
+- 补 0 后的字符串。
+
+<details>
+<summary>Examples</summary>
+
+```js
+$addZero('6') // '06'
+$isString(99) // '99'
 ```
 </details>
 
