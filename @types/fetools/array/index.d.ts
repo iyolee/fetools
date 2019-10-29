@@ -1,2 +1,4 @@
 import { $isArray } from './isArray';
-export { $isArray, };
+import { $shuffle } from './shuffle';
+import { $flattenArray } from './flattenArray';
+export { $isArray, $shuffle, $flattenArray, };

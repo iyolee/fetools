@@ -1,3 +1,4 @@
 import { $whichType } from './whichType';
 import { $isType } from './isType';
-export { $whichType, $isType, };
+import { $equals } from './equals';
+export { $whichType, $isType, $equals, };

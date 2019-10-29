@@ -1,0 +1,1 @@
+{"version":3,"file":"randomIntegerInRange.js","sourceRoot":"","sources":["../../src/number/randomIntegerInRange.ts"],"names":[],"mappings":"AAAA,MAAM,UAAU,qBAAqB,CAAC,GAAW,EAAE,GAAW;IAC5D,OAAO,IAAI,CAAC,KAAK,CAAC,IAAI,CAAC,MAAM,EAAE,GAAG,CAAC,GAAG,GAAG,GAAG,GAAG,CAAC,CAAC,CAAC,GAAG,GAAG,CAAC;AAC3D,CAAC"}

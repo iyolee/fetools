@@ -1,0 +1,1 @@
+{"version":3,"file":"getDaysDiffBetweenDates.js","sourceRoot":"","sources":["../../src/date/getDaysDiffBetweenDates.ts"],"names":[],"mappings":"AAQA,MAAM,UAAU,wBAAwB,CAAC,SAAwB,EAAE,OAAsB;IACvF,OAAO,CAAC,CAAC,CAAC,OAAO,CAAC,GAAG,CAAC,CAAC,SAAS,CAAC,CAAC,GAAG,CAAC,IAAI,GAAG,IAAI,GAAG,EAAE,CAAC,CAAC;AAC1D,CAAC"}

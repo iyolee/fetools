@@ -1,1 +1,1 @@
-export declare function $whichType(value: any): string;
+export declare function $whichType(val: any): string;

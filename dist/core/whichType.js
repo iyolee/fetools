@@ -1,6 +1,6 @@
-export function $whichType(value) {
+export function $whichType(val) {
     var _toString = Object.prototype.toString;
-    var type = _toString.call(value).split(' ')[1].replace(']', '');
+    var type = _toString.call(val).split(' ')[1].replace(']', '');
     return type.toLowerCase();
 }
 //# sourceMappingURL=whichType.js.map
