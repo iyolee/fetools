@@ -1,6 +1,6 @@
 import { $whichType } from '../index';
 
-export function $isObjectEquals(obj1: { [propName: string]: any }, obj2: { [propName: string]: any }) {
+export function $isObjectEquals(obj1: { [propName: string]: any }, obj2: { [propName: string]: any }): boolean {
   if ($whichType(obj1) !== $whichType(obj2)) return false;
   for (let propName in obj1) {
     if (obj1.hasOwnProperty(propName) !== obj2.hasOwnProperty(propName)) {
