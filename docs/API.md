@@ -78,6 +78,14 @@ fetools 详细 API 文档。
 
 </details>
 
+## BOM
+<details>
+<summary>View contents</summary>
+
+* [`$localStorage`](#localStorage)
+
+</details>
+
 ### isPlainOject
 描述：判断传进去的某个值是否为 Object。
 
@@ -618,6 +626,39 @@ $whichType(val: any): String;
 ```js
 $whichType('') // 'string'
 $whichType({}) // 'object'
+```
+</details>
+
+<br>[⬆ Back to top](#APIs)
+
+### localStorage
+描述：封装一个具有过期时间功能的localStorage，存储值时加上过期时间，取值前先判断当前数据是否已过期，如果已过期，返回`参数${key}已过期`，否则返回真实的值。  
+
+```js
+$localStorage.setItem(key: String, ...val)
+$localStorage.removeItem(key: String);
+// 移除所有
+$localStorage.clear();
+```
+
+参数：
+- 看 Example。
+
+返回值：
+- 无。
+
+<details>
+<summary>Examples</summary>
+
+```js
+$localStorage.setItem('test','222',2000)
+$localStorage.getItem('test') //'222'
+setTimeout(()=>{
+  $localStorage.getItem('test') //'参数test已过期'
+},3000)
+
+$localStorage.removeItem('myCat')
+$localStorage.clear()
 ```
 </details>
 

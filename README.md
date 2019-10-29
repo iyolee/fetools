@@ -3,10 +3,10 @@
 一个轻量、好用的前端工具函数库。
 
 ### Feature
-- [ ] 支持 TypeScript
-- [ ] 轻量，无依赖其他第三方库
-- [ ] 支持 IE9+
-- [ ] 测试覆盖率 > 95%
+- [x] 支持 TypeScript
+- [x] 轻量，无依赖其他第三方库
+- [x] 支持 IE9+
+- [x] 测试覆盖率 > 95%
 
 ### Usage
 ```
@@ -21,7 +21,7 @@ npm install save fetools-utils
 
 ### Test
 ```
-npm run test
+npm test
 ```
 
 ### Build
