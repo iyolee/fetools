@@ -12,6 +12,9 @@ import replace from 'rollup-plugin-replace';
 import pkg from './package.json';
 // 代码生成sourcemaps
 // import sourceMaps from 'rollup-plugin-sourcemaps'
+import { uglify } from 'rollup-plugin-uglify';
+
+process.env.NODE_ENV = 'production';
 
 // 代码头
 const banner =`
@@ -35,14 +38,15 @@ export default {
       exclude: 'node_modules/**',
       typescript: require('typescript'),
     }),
-    // json(),
+    json(),
     resolve({
       jsnext: true,
       main: true
     }),
     commonjs({
-      include: 'node_modules/**'
+      exclude: 'node_modules/**'
     }),
+    (process.env.NODE_ENV === 'production' && uglify()),
     // sourceMaps()
   ],
   output:[

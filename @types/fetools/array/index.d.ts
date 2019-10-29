@@ -1,2 +1,2 @@
-import { isArray$ } from './array';
-export { isArray$, };
+import { $isArray } from './isArray';
+export { $isArray, };
