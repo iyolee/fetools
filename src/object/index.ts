@@ -1,7 +1,13 @@
-import { $isPrimitive } from './isPrimitive';
-import { $getPrimitive } from './getPrimitive';
+import { $isPlainOject } from './isPlainObject';
+import { $pluckDeep } from './pluckDeep';
+import { $isObjectEquals } from './isObjectEquals';
+import { $flattenObject } from './flattenObject';
+import { $unflattenObject } from './unflattenObject';
 
 export {
-  $isPrimitive,
-  $getPrimitive,
+  $isPlainOject,
+  $pluckDeep,
+  $isObjectEquals,
+  $flattenObject,
+  $unflattenObject,
 };
