@@ -62,6 +62,22 @@ fetools 详细 API 文档。
 
 </details>
 
+## Date
+<details>
+<summary>View contents</summary>
+
+* [`$getDaysDiffBetweenDates`](#getDaysDiffBetweenDates)
+
+</details>
+
+## Other
+<details>
+<summary>View contents</summary>
+
+* [`$whichType`](#whichType)
+
+</details>
+
 ### isPlainOject
 描述：判断传进去的某个值是否为 Object。
 
@@ -554,6 +570,54 @@ $addZero(val: String): String;
 ```js
 $addZero('6') // '06'
 $isString(99) // '99'
+```
+</details>
+
+<br>[⬆ Back to top](#APIs)
+
+### getDaysDiffBetweenDates
+描述：获取两个日期间隔的天数。
+
+```js
+$getDaysDiffBetweenDates(beginDate: Date, endDate: Date): Number;
+```
+
+参数：
+- beginDate: 开始时间。
+- endDate: 结束时间。
+
+返回值：
+- 两个日期间隔的天数。
+
+<details>
+<summary>Examples</summary>
+
+```js
+$getDaysDiffBetweenDates(new Date('2019-01-01'), new Date('2019-10-24')) // 296
+```
+</details>
+
+<br>[⬆ Back to top](#APIs)
+
+### whichType
+描述：检测输入的值属于什么类型。
+
+```js
+$whichType(val: any): String;
+```
+
+参数：
+- val: 需要检测的值。
+
+返回值：
+- 值的类型，有: "string", "number", "null", "undefined", "boolean", "symbol", "function", "object", "regexp", "array"。
+
+<details>
+<summary>Examples</summary>
+
+```js
+$whichType('') // 'string'
+$whichType({}) // 'object'
 ```
 </details>
 
