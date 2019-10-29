@@ -1,4 +1,4 @@
-import { $isArray, $shffle, $flattenArray } from './array';
+import { $isArray, $shuffle, $flattenArray } from './array';
 import { $pluckDeep, $isPlainOject, $isObjectEquals, $flattenObject, $unflattenObject } from './object';
 import { $isType, $whichType, $equals } from './core';
 import { $isString, $addZero } from './string';
@@ -9,7 +9,7 @@ import { $once, $debounce, $throttle } from './function';
 
 export {
   $isArray,
-  $shffle,
+  $shuffle,
   $flattenArray,
   $pluckDeep,
   $isPlainOject,

@@ -1,12 +1,12 @@
-import { $isArray, $shffle, $flattenArray } from '../src/index';
+import { $isArray, $shuffle, $flattenArray } from '../src/index';
 
 test('[array]case 1: $isArray', () => {
   expect($isArray([])).toBe(true)
   expect($isArray({})).toBe(false)
 })
 
-test('[array]case 2: $shffle', () => {
-  expect($shffle([1, 2, 3])).toBeInstanceOf(Array)
+test('[array]case 2: $shuffle', () => {
+  expect($shuffle([1, 2, 3])).toBeInstanceOf(Array)
 })
 
 test('[array]case 3: $flattenArray', () => {

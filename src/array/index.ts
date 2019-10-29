@@ -1,9 +1,9 @@
 import { $isArray } from './isArray';
-import { $shffle } from './shuffle';
+import { $shuffle } from './shuffle';
 import { $flattenArray } from './flattenArray';
 
 export {
   $isArray,
-  $shffle,
+  $shuffle,
   $flattenArray,
 };
