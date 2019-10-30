@@ -36,6 +36,9 @@ npm run build
 npm run coverage
 ```
 
+### CHANGELOG
+[CHANGELOG](./CHANGELOG.md)
+
 ### PR
 如何PR？请移步[PR 流程](./docs/PR.md)
 
