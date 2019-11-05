@@ -1,3 +1,7 @@
+## [0.0.8](https://github.com/iyolee/fetools/compare/v0.0.7...v0.0.8) (2019-11-05)
+
+
+
 ## [0.0.7](https://github.com/iyolee/fetools/compare/f1040eb2cdee731f6f4e896c2002685e6bff5cca...v0.0.7) (2019-11-05)
 
 
