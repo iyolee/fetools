@@ -14,12 +14,16 @@
     "coverage": "open ./coverage/lcov-report/index.html",
     "tslint": "tslint --project tsconfig.json",
     "pre-commit": "npm run tslint",
-    "changelog": "rm -r CHANGELOG.md && conventional-changelog -p angular -i CHANGELOG.md -s",
-    "build": "tsc && ./node_modules/.bin/rollup -c"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "build": "tsc && ./node_modules/.bin/rollup -c",
+    "patch": "npm version patch && npm run changelog && npm run build && npm publish"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/iyolee/fetools.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
   "husky": {
     "hooks": {
