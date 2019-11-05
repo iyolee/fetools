@@ -1,6 +1,6 @@
 import { $isArray, $shuffle, $flattenArray } from './array';
 import { $pluckDeep, $isPlainOject, $isObjectEquals, $flattenObject, $unflattenObject } from './object';
-import { $isType, $whichType, $equals } from './core';
+import { $isType, $whichType, $equals, $isMobile } from './core';
 import { $isString, $addZero } from './string';
 import { $MayBe, $continous, $toggle, $pipe } from './fp';
 import { $isNumber, $randomIntegerInRange, $randomNumberInRange } from './number';
@@ -33,4 +33,5 @@ export {
   $once,
   $debounce,
   $throttle,
+  $isMobile,
 };

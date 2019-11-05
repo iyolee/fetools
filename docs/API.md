@@ -75,6 +75,7 @@ fetools 详细 API 文档。
 <summary>View contents</summary>
 
 * [`$whichType`](#whichType)
+* [`$isMobile`](#isMobile)
 
 </details>
 
@@ -626,6 +627,29 @@ $whichType(val: any): String;
 ```js
 $whichType('') // 'string'
 $whichType({}) // 'object'
+```
+</details>
+
+<br>[⬆ Back to top](#APIs)
+
+### isMobile
+描述：检测客户端是否为移动端。
+
+```js
+$isMobile(): Boolean;
+```
+
+参数：
+- 无。
+
+返回值：
+- true / false。
+
+<details>
+<summary>Examples</summary>
+
+```js
+$isMobile('') // true
 ```
 </details>
 
