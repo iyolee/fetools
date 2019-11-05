@@ -1,4 +1,4 @@
-## 0.0.6 (2019-11-05)
+## [0.0.7](https://github.com/iyolee/fetools/compare/f1040eb2cdee731f6f4e896c2002685e6bff5cca...v0.0.7) (2019-11-05)
 
 
 ### Bug Fixes
@@ -22,6 +22,7 @@
 * update version ([13e0e6f](https://github.com/iyolee/fetools/commit/13e0e6fa324e0375eb584689e980c6f4a3322d1a))
 * v0.0.5 ([c73670a](https://github.com/iyolee/fetools/commit/c73670a1d6fdcfbd19e19b9f8b26b19db5728c50))
 * version 0.0.6 ([85e9e4e](https://github.com/iyolee/fetools/commit/85e9e4e5eff0b0cc5689ae1bc761fc56269feb5e))
+* 增加移动端探测api: ([ad0caea](https://github.com/iyolee/fetools/commit/ad0caeac0c463fa448f5d4a79ee1280ef8fefa10))
 * 添加具有过期时间功能的localStorage ([cf1c6a6](https://github.com/iyolee/fetools/commit/cf1c6a6b740d122736e6f457ce22438cc583f325))
 
 
