@@ -1,4 +1,4 @@
-import { $whichType, $isType, $equals } from '../src/index';
+import { $whichType, $isType, $equals, $isMobile } from '../src/index';
 
 test('[core]case 1: $isType', () => {
   expect($isType('string', '')).toBe(true)
@@ -30,4 +30,8 @@ test('[core]case 3: $equals', () => {
   expect($equals(new Date('2019-10-09'), new Date('2019-10-09'))).toBe(true)
   expect($equals(new Date('2019-10-09'), new Date('2019-10-10'))).toBe(false)
   expect($equals([1, 2, 4, [2, 3, 4]], [1, 2, 3, [2, 3, 4]])).toBe(false)
+})
+
+test('[core]case 4: $isMobile', () => {
+  expect($isMobile()).toBe(false)
 })
